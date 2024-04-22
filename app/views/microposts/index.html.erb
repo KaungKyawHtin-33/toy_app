@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="d-flex justify-content-between align-items-center">
+  <h1>Microposts</h1>
+  <%= link_to "Add new micropost", new_micropost_path %>
+</div>
+
+<div id="microposts">
+  <% @microposts.each do |micropost| %>
+    <%= render micropost %>
+    <p class="btn btn-sm btn-warning mt-3">
+      <%= link_to "Show this micropost", micropost %>
+    </p>
+  <% end %>
+</div>

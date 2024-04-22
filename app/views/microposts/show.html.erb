@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @micropost %>
+
+<div>
+  <div class="mt-3">
+    <%= link_to "Edit this micropost", edit_micropost_path(@micropost) %> |
+    <%= link_to "Back to microposts", microposts_path %>
+  </div>
+
+  <div class="mt-3">
+    <%= button_to "Destroy this micropost", @micropost, method: :delete %>
+  </div>
+</div>
